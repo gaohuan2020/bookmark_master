@@ -7,6 +7,11 @@ A bookmark tag organization tool based on browser extension and Python backend
 - Quick webpage content extraction
 - One-click operation via browser extension
 - Automated content processing and saving
+- Advanced search capabilities:
+  - Full-text search in browsing history
+  - Smart bookmark search with tags
+  - Search filters by date and domain
+  - Search history tracking
 
 ## Requirements
 
@@ -43,7 +48,8 @@ python app.py
 
 1. Open any webpage in browser
 2. Click the extension icon
-4. Click "Extract" button
+3. Click "bookmark Analysis" button to obtain bookmark analysis results
+4. Click "bookmark Organize" button to organize bookmarks
 
 ## Todo List
 
@@ -53,6 +59,8 @@ python app.py
   - [ ] Add user agent simulation
 - [ ] Optimize error handling
 - [ ] Add support for more models
+- [ ] Enhance search capabilities
+  - [ ] Implement full-text search for history and bookmarks
 
 ## Common Issues
 
