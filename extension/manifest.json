@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "懒人收藏夹整理",
+    "version": "1.0",
+    "description": "帮助收藏夹达人整理收藏夹",
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
