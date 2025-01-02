@@ -1,78 +1,77 @@
-# 网页收藏夹整理大师
+# Bookmark Organization Master
 
-一个基于浏览器插件和Python后端的收藏夹标签整理工具
+A bookmark tag organization tool based on browser extension and Python backend
 
-## 功能特点
+## Features
 
-- 支持网页内容快速提取
-- 浏览器插件支持一键操作
-- 自动化内容处理和保存
+- Quick webpage content extraction
+- One-click operation via browser extension
+- Automated content processing and saving
 
-## 环境要求
+## Requirements
 
 - Python 3.10+
-- Edge 浏览器 (版本 90+)
-- 支持的操作系统: Windows/MacOS/Linux
+- Edge Browser (version 90+)
+- Supported OS: Windows/MacOS/Linux
 
-## 安装步骤
+## Installation
 
-### 1. 安装Python依赖
+### 1. Install Python Dependencies
 
 bash
 pip install -r requirements.txt
 
-### 2. 安装浏览器插件
-1. 打开Edge浏览器
-2. 进入扩展程序页面 (edge://extensions/)
-3. 开启"开发者模式"
-4. 点击"加载已解压的扩展程序"
-5. 选择项目中的 `extension` 文件夹
+### 2. Install Browser Extension
+1. Open Edge browser
+2. Go to extensions page (edge://extensions/)
+3. Enable "Developer mode"
+4. Click "Load unpacked extension"
+5. Select the `extension` folder in the project
 
-## 启动服务
-1. 在app.py中配置Deepseek的api_key
+## Service Setup
+1. Configure Deepseek api_key in app.py
 ![alt text](image.png)
 
-2. 启动后端服务:
+2. Start backend service:
 ```bash
 python app.py
 ```
 
-2. 服务默认运行在 `http://localhost:5000`
+2. Service runs on `http://localhost:5000` by default
 
-## 使用方法
+## Usage
 
-1. 在浏览器中打开任意网页
-2. 点击插件图标
+1. Open any webpage in browser
+2. Click the extension icon
+4. Click "Extract" button
 
-4. 点击"提取"按钮
+## Todo List
 
-## 待办事项
+- [ ] Fix Zhihu page access issues
+  - [ ] Handle Zhihu anti-crawler mechanism
+  - [ ] Optimize Zhihu page content extraction
+  - [ ] Add user agent simulation
+- [ ] Optimize error handling
+- [ ] Add support for more models
 
-- [ ] 修复知乎页面访问问题
-  - [ ] 处理知乎反爬虫机制
-  - [ ] 优化知乎页面内容提取
-  - [ ] 添加用户代理模拟
-- [ ] 优化错误处理机制
-- [ ] 添加更多模型的支持
+## Common Issues
 
-## 常见问题
+1. If extension fails to connect to backend, check:
+   - If backend service is running properly
+   - If port is occupied
+   - Firewall settings
 
-1. 如果遇到插件无法连接后端，请检查:
-   - 后端服务是否正常运行
-   - 端口是否被占用
-   - 防火墙设置
+2. If content extraction fails:
+   - Verify if webpage is accessible
+   - For Zhihu pages, fix is in progress
 
-2. 如果内容提取失败:
-   - 确认网页是否可以正常访问
-   - 对于知乎页面，目前正在修复中
+3. If unable to delete existing tags:
+   - Verify browser sync is turned off
 
-3. 如果无法删除已有的标签:
-   - 确认检查浏览器同步是否关闭
-
-## 许可证
+## License
 
 MIT License
 
-## 联系方式
+## Contact
 
-如有问题，请提交 Issue 或 Pull Request。
+For issues, please submit an Issue or Pull Request.
